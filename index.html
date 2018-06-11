@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>A Pen by  Adrian Valverde</title>
+  
+  
+  
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <br>
+<br>
+<br>
+<br>
+<div class = "img"><img src = "http://mriscancenter.com/wp-content/uploads/2017/03/background-mri.jpg"/></div>
+<body onclick = "showCoords(event)">
+  
+  <p id ="showme"></p>
+<div class="center"><img src= "http://progressiveradiology.com/images/site-design/logo.png"/img><br>
+   </div>
+    <h2 class="Titlepage">MRI Scheduling guide</h2>
+    <h3 class="center">for quick referencing only, the ordering physician will order exams as needed.</h3>
+  <i><h4 class="center">by common diagnosis (Click body part below)</h4></i>
+<br>
+  
+    <div class="center2"><label class="collapse" for="_1"><h3>HEAD</h3></label>
+      <input id="_1" type="checkbox">
+<div class="center">
+      
+  <ul class="bullet"><li><button class= "clean" onclick="prep1()">Aneurysm</button></li>
+<div id = "head1" class = "style1"></div>
+
+    <li><button class=clean onclick="prep2()">Acoustic Neuroma</button></li>
+  <div id = "head2" class = "style1"></div>
+    
+    
+<li><button class=clean onclick="prep3()">Blurred or Double Vision</button></li>
+  <div id = "head3" class = "style1"></div>
+    
+        <li><button class=clean onclick="prep4()">Cancer or Rule out (r/o) METS</button></li>
+    <div id = "head4" class = "style1"></div>
+  
+            <li><button class=clean onclick="prep5()">Chiari Malformation</button></li><div id = "head5" class = "style1"></div>
+    
+     <li><button class=clean onclick="prep6()">Cerebellopontine Angle (CPA) tumors </button></li>
+     <div id = "head6" class = "style1"></div>
+    
+     <li><button class=clean onclick="prep7()">Dizziness</button></li>
+    <div id = "head7" class = "style1"></div>
+    
+        <li><button class=clean onclick="prep8()">Headache / Migraines</button></li>
+        <div id = "head8" class = "style1"></div>
+    
+            <li><button class=clean onclick="prep9()">Hormone conditions-Amenoria,  Galactorrhea, Estrogen, Testoserone</button></li>
+        <div id = "head9" class = "style1"></div>
+        
+        <li><button class=clean onclick="prep10()">Inner ear symptoms(pain, hearing loss)</button></li>
+        <div id = "head10" class = "style1"></div>
+    
+          <li><button class=clean onclick="prep11()">MS - Multiple Sclerosis</button></li>
+    <div id = "head11" class = "style1"></div>
+    
+        <li><button class=clean onclick="prep12()">Pituitary</button></li>
+    <div id = "head12" class = "style1"></div>
+        
+            <li><button class=clean onclick="prep13()">Seizures</button></li>
+    <div id = "head13" class = "style1"></div>
+    
+        <li><button class=clean onclick="prep14()">Stroke/TIA</button></li>
+      <div id = "head14" class = "style1"></div>
+     </ul></div>
+      
+      <label class="collapse" for="_4"><h3>NECK</h3></label>
+<input id="_4" type="checkbox"> 
+    
+    
+<div class="center"><ul class="bullet"> <li><button class= "clean" onclick="prep25()">Aneurysm/Stenosis</button></li>
+   <div id = "n1" class = "style1"></div>
+  
+      <li><button class="clean" onclick="prep26()">Brachial Plexus Nerves / Brachial Neuritis</button></li>
+   <div id = "n2" class = "style1"></div>
+  
+<li><button class="clean" onclick="prep27()">Cancer</button></li>
+   <div id = "n3" class = "style1"></div>
+        
+  <li><button class="clean" onclick="prep28()">Injury/Trauma/Auto Accident</button></li>
+   <div id = "n4" class = "style1"></div>
+  
+        <li><button class="clean" onclick="prep29()">Lymphadenopathy</button></li>
+   <div id = "n5" class = "style1"></div>
+  
+  <li><button class="clean"  onclick="prep30()">Mass</button></li>
+   <div id = "n6" class = "style1"></div>
+      
+        <li><button class="clean" onclick="prep31()">Pain</button></li>
+   <div id = "n7" class = "style1"></div>
+  
+  <li><button class= "clean" onclick="prep32()">Parotid Mass/Cancer</button></li>
+ <div id = "n8" class = "style1"></div>
+  
+  <li><button class="clean" onclick="prep33()">Sialadenitis</button></li>
+   <div id = "n9" class = "style1"></div>
+  
+  <li><button class="clean" onclick="prep34()">Stone/Salivary gland stone</button></li>
+   <div id = "n10" class = "style1"></div>
+  
+    <li><button class="clean" onclick="prep35()">Thyroid Mass/Cancer</button></li>
+   <div id = "n11" class = "style1"></div>
+  
+      <li><button class="clean" onclick="prep36()">Thoracic Outlet Syndrome</button></li>
+   <div id = "n12" class = "style1"></div>
+  
+           <li><button class="clean" onclick="prep37()">Vocal Chord Paralysis</button></li>
+   <div id = "n13" class = "style1"></div>
+  
+  </ul></div>
+      
+       <label class="collapse" for="_2"><h3>CERVICAL SPINE (C-Spine)</h3></label>
+<input id="_2" type="checkbox"> 
+<div class="center">
+  <ul class="bullet">
+  <li><button class="clean" onclick="prep15()">Accident / Injury</button></li>
+    <div id = "cs1" class = "style1"></div>
+  
+  <li><button class= "clean" onclick="prep16()">Chiari Malformation</button></li>
+      <div id = "cs2" class = "style1"></div>
+  
+    <li><button class= "clean" onclick="prep17()">Headaches</button></li>
+     <div id = "cs3" class = "style1"></div>
+  
+    <li><button class= "clean" onclick="prep18()">Injury</button></li>
+      <div id = "cs4" class = "style1"></div>
+    
+       <li><button class= "clean" onclick="prep19()">Limited Movement / Stiffness</button></li>
+     <div id = "cs5" class = "style1"></div>
+  
+       <li><button class= "clean" onclick="prep20()">MS - Multiple Sclerosis</button></li>
+     <div id = "cs6" class = "style1"></div>
+  
+       <li><button class= "clean" onclick="prep21()">Numbness / Tingling</button></li>
+     <div id = "cs7" class = "style1"></div>
+  
+       <li><button class= "clean" onclick="prep22()">Pain</button></li>
+     <div id = "cs8" class = "style1"></div>
+  
+       <li><button class= "clean" onclick="prep23()">Radiculopathy</button></li>
+      <div id = "cs9" class = "style1"></div>
+  
+       <li><button class= "clean" onclick="prep24()">Surgery</button></li>   
+      <div id = "cs10" class = "style1"></div>
+  </ul>
+    </div>
+
+        <label class="collapse" for="_3"><h3>THORACIC Spine (T-Spine)</h3></label>
+<input id="_3" type="checkbox"> 
+<div class="center">
+  <ul class="bullet">
+
+     <li><button class="clean" onclick="prep38()">Accident / Injury</button></li>
+    <div id = "ts1" class = "style1"></div>
+    
+    <li><button class= "clean" onclick="prep41()">Injury</button></li>
+      <div id = "ts4" class = "style1"></div>
+    
+       <li><button class= "clean" onclick="prep42()">Limited Movement / Stiffness</button></li>
+     <div id = "ts5" class = "style1"></div>
+  
+       <li><button class= "clean" onclick="prep39()">Mass</button></li>
+     <div id = "ts2" class = "style1"></div>
+    
+       <li><button class= "clean" onclick="prep43()">MS - Multiple Sclerosis</button></li>
+     <div id = "ts6" class = "style1"></div>
+  
+       <li><button class= "clean" onclick="prep44()">Numbness / Tingling</button></li>
+     <div id = "ts7" class = "style1"></div>
+  
+       <li><button class= "clean" onclick="prep45()">Pain</button></li>
+     <div id = "ts8" class = "style1"></div>
+  
+       <li><button class= "clean" onclick="prep46()">Radiculopathy</button></li>
+      <div id = "ts9" class = "style1"></div>
+  
+       <li><button class= "clean" onclick="prep47()">Surgery</button></li>   
+      <div id = "ts10" class = "style1"></div>
+   
+  </ul>
+      </div>
+ 
+      <label class="collapse" for="_22"><h3>LUMBAR SPINE (L-Spine)</h3></label>
+<input id="_22" type="checkbox"> 
+<div class="center">
+  <ul class="bullet">
+  <li><button class="clean" onclick="prep48()">Accident / Injury</button></li>
+    <div id = "ls1" class = "style1"></div>
+  
+    <li><button class= "clean" onclick="prep51()">Injury</button></li>
+      <div id = "ls4" class = "style1"></div>
+    
+       <li><button class= "clean" onclick="prep52()">Limited Movement / Stiffness</button></li>
+     <div id = "ls5" class = "style1"></div>
+    
+        <li><button class= "clean" onclick="prep49()">Mass</button></li>
+     <div id = "ls2" class = "style1"></div>
+  
+       <li><button class= "clean" onclick="prep54()">Numbness / Tingling</button></li>
+     <div id = "ls7" class = "style1"></div>
+  
+       <li><button class= "clean" onclick="prep55()">Pain</button></li>
+     <div id = "ls8" class = "style1"></div>
+  
+       <li><button class= "clean" onclick="prep56()">Radiculopathy</button></li>
+      <div id = "ls9" class = "style1"></div>
+  
+       <li><button class= "clean" onclick="prep57()">Surgery</button></li>   
+      <div id = "ls10" class = "style1"></div>
+ 
+  </ul>
+    </div>  
+  
+  
+<label class="collapse" for="_6"><h3>ABDOMEN</h3></label>
+<input id="_6" type="checkbox"> 
+  <div class="center">
+      <ul class="bullet">
+      
+        <li><button class= "clean" onclick="prep68()">Abdominal Pain</button></li>
+      <div id = "ab1" class = "style1"></div>  
+                <li><button class= "clean" onclick="prep69()">Adrenal mass</button></li>
+      <div id = "ab2" class = "style1"></div>  
+                <li><button class= "clean" onclick="prep70()">Bile Duct</button></li>
+      <div id = "ab3" class = "style1"></div>  
+                <li><button class= "clean" onclick="prep71()">Cancer - METS</button></li>
+      <div id = "ab4" class = "style1"></div>  
+                <li><button class= "clean" onclick="prep72()">Crohn's Disease</button></li>
+      <div id = "ab5" class = "style1"></div>  
+                <li><button class= "clean" onclick="prep73()">Gallbladder</button></li>
+      <div id = "ab6" class = "style1"></div>  
+                <li><button class= "clean" onclick="prep74()">Hemangioma</button></li>
+      <div id = "ab7" class = "style1"></div>  
+                <li><button class= "clean" onclick="prep75()">Increased Liver Enzymes / LFT</button></li>
+      <div id = "ab8" class = "style1"></div>  
+                <li><button class= "clean" onclick="prep76()">Kidney Mass</button></li>
+      <div id = "ab9" class = "style1"></div>  
+                <li><button class= "clean" onclick="prep77()">Pain</button></li>
+      <div id = "ab10" class = "style1"></div>
+                <li><button class= "clean" onclick="prep78()">Pancreatic conditions</button>
+      <div id = "ab11" class = "style1"></div>
+                  <li><button class= "clean" onclick="prep79()">Spleen</button></li>
+      <div id = "ab12" class = "style1"></div>
+     </li>   
+    </ul>
+</div>
+      
+      <label class="collapse" for="_PL"><h3>PELVIS</h3></label>
+<input id="_PL" type="checkbox"> 
+  <div class="center">
+      <ul class="bullet">
+      
+        <li><button class= "clean" onclick="prep80()">Cancer / METS</button></li>
+      <div id = "pl1" class = "style1"></div>  
+                <li><button class= "clean" onclick="prep81()">Hernia</button></li>
+      <div id = "pl2" class = "style1"></div>  
+                <li><button class= "clean" onclick="prep82()">Mass</button></li>
+      <div id = "pl3" class = "style1"></div>  
+                <li><button class= "clean" onclick="prep83()">Pain</button></li>
+      <div id = "pl4" class = "style1"></div>  
+                <li><button class= "clean" onclick="prep84()">Prostate</button></li>
+      <div id = "pl5" class = "style1"></div>  
+    </ul>
+</div>
+      
+      <label class="collapse" for="_SH"><h3>SHOULDER</h3></label>
+<input id="_SH" type="checkbox"> 
+  <div class="center">
+      <ul class="bullet">
+      
+        <li><button class= "clean" onclick="prep85()">Labral Tear</button></li>
+      <div id = "sh1" class = "style1"></div>  
+                <li><button class= "clean" onclick="prep86()">Pain</button></li>
+      <div id = "sh2" class = "style1"></div>  
+                <li><button class= "clean" onclick="prep87()">Rotator Cuff Tear</button></li>
+      <div id = "sh3" class = "style1"></div>   
+        
+    </ul>
+</div>
+
+      <label class="collapse" for="_ue"><h3>UPPER EXTREMITIES</h3></label>
+<input id="_ue" type="checkbox"> 
+  <div class="center">
+      <ul class="bullet">
+      
+        <li><button class= "clean" onclick="prepElbow()">Elbow</button></li>
+      <div id = "ue1" class = "style1"></div>  
+                <li><button class= "clean" onclick="prepForearm()">Forearm</button></li>
+      <div id = "ue2" class = "style1"></div>  
+                <li><button class= "clean" onclick="prepWrist()">Wrist</button></li>
+      <div id = "ue3" class = "style1"></div>  
+    </ul>
+</div>
+      
+      <label class="collapse" for="_le"><h3>LOWER EXTREMITIES</h3></label>
+<input id="_le" type="checkbox"> 
+  <div class="center">
+      <ul class="bullet">
+      
+        <li><button class= "clean" onclick="prepAnkle()">Ankle</button></li>
+      <div id = "le1" class = "style1"></div>  
+                <li><button class= "clean" onclick="prepFoot()">Foot</button></li>
+      <div id = "le3" class = "style1"></div>  
+                <li><button class= "clean" onclick="prepFemur()">Femur (Bone)</button></li>
+      <div id = "le4" class = "style1"></div>  
+                <li><button class= "clean" onclick="prepHips()">Hips</button></li>
+      <div id = "le5" class = "style1"></div>  
+                <li><button class= "clean" onclick="prepThigh()">Thigh (Soft Tissue)</button></li>
+      <div id = "le6" class = "style1"></div>  
+                <li><button class= "clean" onclick="prepTibFib()">Tib/Fib</button></li>
+      <div id = "le7" class = "style1"></div>  
+    
+    </ul>
+</div>
+      
+
+
+<h6 class="end"><i>Please report any problems to Adrian</i></h6>
+<h6 class="end"><i>04.23.2018</i></h6>
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h6 class="end"><i>"Dont sweat the petty things and dont pet the sweaty things."  -some dude</i></h6>
+</body>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
