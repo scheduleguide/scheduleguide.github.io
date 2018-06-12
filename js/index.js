@@ -291,7 +291,7 @@ function resultsFoot(target){
 
 function resultsHips(target){
      target.style.display = "block";
-  target.innerHTML = "30 Minute Time slot<br>MRI Hips Without Contrast<br><font color = lightblue>45 minutes if with and without contrast.</font>"; 
+  target.innerHTML = "45 Minute Time slot<br>MRI Hips Without Contrast<br><font color = lightblue> if with and without contrast.</font>"; 
 }
 
 function resultsThigh(target){
@@ -817,4 +817,26 @@ function prep122(){
 function prep123(){
       checkall();
   results11(n13);
+}
+
+
+
+      var canvas = document.getElementById('can1');
+      var context = canvas.getContext('2d');
+      var imageObj = new Image();
+      imageObj.onload = function() {
+      context.drawImage(imageObj, 0, 0, 650,450, 0, 0, 280, 150);
+      };
+      imageObj.src = 'https://scontent-iad3-1.cdninstagram.com/vp/fd10957d89aa831a1cbae3d189b410f9/5BB27FBF/t51.2885-15/s640x640/sh0.08/e35/26871157_1117860255016879_3069302497236484096_n.jpg';
+     
+
+
+function displayit(){
+  var x = document.getElementById('can1');
+  if (x.style.visibility = "hidden");{
+  x.style.visibility = "visible";
+   context.fillStyle = "white";
+  context.font = "20px Arial";
+  context.fillText("meow :)", 195, 130); 
+  }
 }

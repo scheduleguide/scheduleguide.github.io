@@ -382,3 +382,17 @@ body{background-color: white
 .canvasx{
   display: block;
 }
+
+#secret{
+  background-color: pink;
+  padding:1px;
+  cursor: pointer;
+}
+
+.hidden{
+     margin-left: auto;
+    margin-right: auto;
+   display: block;
+    visibility: hidden;
+}
+
